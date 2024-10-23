@@ -26,8 +26,8 @@ const resolvers = {
     
         // Check if the email is in the superAdmin list
         const superAdminEntry = await superAdminSchema.mongoModel.findOne({ email: signUpData.email });
-        const assignedRole = superAdminEntry ? "ADMIN" : "USER";  // Assign role based on superAdmin presence
-    
+        const assignedRole = superAdminEntry ? "ADMIN" : "USER";  
+          
         // Create new user
         const newUser = await userSchema.mongoModel.create({
           userName: signUpData.userName,

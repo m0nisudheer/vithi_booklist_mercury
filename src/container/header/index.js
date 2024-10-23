@@ -45,9 +45,18 @@ const Navbar = () => {
     <>
       <nav className="bg-gray-800 text-white p-2 shadow-lg">
         <div className="flex items-center justify-between">
-          <div className="flex items-center">
+          {/* <div className="flex items-center">
             <IoBookSharp size={40} className="text-red-500" />
-          </div>
+          </div> */}
+
+<div className="flex items-center">
+  <img
+    src="https://cdn-icons-png.flaticon.com/512/8832/8832880.png"
+    alt="Book"
+    className="w-10 h-10" // Adjust size as needed
+  />
+</div>
+
 
           <div className="flex-grow text-center">
             <span className="text-lg font-bold text-red-500">

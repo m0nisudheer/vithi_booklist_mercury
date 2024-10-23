@@ -77,12 +77,10 @@ const SignUp = () => {
             router.push("/login");
           }, 2000);
         } else {
-          // Use specific error messages returned from the server
           const errorMsg = result.errors && result.errors[0] 
             ? result.errors[0].message 
             : "An unknown error occurred";
           
-          // Display the specific error messages in a toast
           toast.error(`Registration Failed: ${errorMsg}`, {
             position: "top-center",
             autoClose: 2000,

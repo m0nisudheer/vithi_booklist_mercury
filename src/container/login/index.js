@@ -26,7 +26,7 @@ const Login = () => {
         position: "top-center",
         autoClose: false,
         isLoading: true,
-        className: "border border-orange-500", // Add border class for loading state
+        className: "border border-orange-500", 
       });
 
       const mutation = `
